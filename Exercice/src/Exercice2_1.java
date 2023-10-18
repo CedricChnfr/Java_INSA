@@ -31,5 +31,4 @@ essayer « private », qui signifie que cette fonction n'est accessible qu'au se
 dans laquelle il est déclaré (c'est-à-dire la classe Exercice21).
 • static : cette fonction ne change pas
 • void : cette fonction ne retourne pas de résultat
-
 */
