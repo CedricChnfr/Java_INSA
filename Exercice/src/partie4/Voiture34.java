@@ -1,10 +1,12 @@
 //Cédric Chanfreau
 package partie4;
+import java.util.Date;
 
 public class Voiture34 {
 	private char nom;
 	private static int nbVoitures = 0;
 	private static Voiture34[] listeVoitures = new Voiture34[10];
+	private Date dateCreation;
 	
 	private double vitesse;
 
@@ -36,11 +38,16 @@ public class Voiture34 {
 		return nbVoitures;
 	}
 	
+    public Date getDateCreation() {
+        return dateCreation;
+    }
+	
 
 	// Constructeur
 	
 	public Voiture34(double vi) {
 		this.vitesse = vi;
+		this.dateCreation = new Date();
 	}
 	
 	// Constructeur
