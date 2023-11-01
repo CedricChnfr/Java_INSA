@@ -6,12 +6,14 @@ public class TestPoint {
 		try {
 			Point a = new Point(10, 4);
 			a.affiche();
-			a.deplace(-12, 7);
+			Point b = new Point(-2, 5);
+			b.affiche();
+			a.deplace(-11, 7);
 			a.affiche();
 		} catch (ErrConst e) {
 			System.out.println(e.getMessage());
-			e.printStackTrace();
 			System.out.println("Erreur Construction");
+			e.printStackTrace();
 			System.exit(-1);
 		} catch (ErrDepl e) {
 			System.out.println("Erreur de déplacement ! Les coordonnées finales seraient négatives.");

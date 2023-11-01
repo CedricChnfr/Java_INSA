@@ -11,7 +11,7 @@ public class Point {
 	}
 	
 	public void deplace(int dx, int dy) throws ErrDepl {
-		if (((x+dx) < 0) || ((y+dy) <0)) throw new ErrDepl();
+		if (((x+dx) < 0) || ((y+dy) <0)) throw new ErrDepl();	//si x ou y inférieur à 0 alors appel ErrDepl
 		x += dx ; y +=dy;
 		}
 }

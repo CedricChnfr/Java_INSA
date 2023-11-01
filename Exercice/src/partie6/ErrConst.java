@@ -4,11 +4,10 @@ public class ErrConst extends Exception{
 	private String message;
 	private int abs; int ord;
 	
-	
 	public ErrConst() {}
 	
 	public String getMessage() {
-		return this.message;
+		return super.getMessage() + " Valeurs fournies : x = " + this.abs + ", y = " + this.ord;
 	}
 	
 	public ErrConst(int x, int y) {
